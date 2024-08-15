@@ -1,3 +1,6 @@
-h1 {
-    font-size: 36px;
+.GenInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
