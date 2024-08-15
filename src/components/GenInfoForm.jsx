@@ -13,6 +13,10 @@ function GenInfoForm({ personalInfo, setPersonalInfo, objective, setObjective, e
     const handleNumberChange = (number) => {
         setPersonalInfo({...personalInfo, number: number});
     }
+
+    const handleEmailChange = (email) => {
+        setPersonalInfo({...personalInfo, email: email})
+    }
     const handleSchoolChange = (school) => {
         setEducationInfo({...educationInfo, school: school});
     }
