@@ -1,5 +1,3 @@
-
-
 #root {
   max-width: 1280px;
   height: 100vh;
@@ -46,7 +44,8 @@
 
 .AppContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
+  width: 100%;
 }

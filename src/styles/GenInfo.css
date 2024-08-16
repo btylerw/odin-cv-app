@@ -3,4 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.HeaderContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BodyContainer {
+    width: 80%;
+}
+
+.InfoContainer {
+    display: flex;
+    justify-content: space-around;
 }

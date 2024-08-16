@@ -2,35 +2,20 @@ import { useState } from 'react'
 import './App.css'
 import './components/GenInfo'
 import './components/GenInfoForm'
+import defaultData from './defaultData'
 import GenInfo from './components/GenInfo';
 import GenInfoForm from './components/GenInfoForm';
 
 function App() {
-  const [personalInfo, setPersonalInfo] = useState({
-    firstName: 'Tyler',
-    lastName: 'Brown',
-    jobTitle: 'Software Developer',
-    number: '888-555-5555',
-    email: 'brown.tyler.w@gmail.com'
-  });
+  const [personalInfo, setPersonalInfo] = useState(defaultData.personalInfo);
 
-  const [objective, setObjective] = useState('')
+  const [objective, setObjective] = useState(defaultData.objective);
 
-  const [educationInfo, setEducationInfo] = useState({
-    school: 'California State University, Bakersfield',
-    degree: 'Computer Science'
-  })
+  const [educationInfo, setEducationInfo] = useState(defaultData.educationInfo);
 
-  const [workInfo, setWorkInfo] = useState({
-    job1: 'Freelance Developer',
-    job2: 'Intern at Tech Company'
-  })
+  const [workInfo, setWorkInfo] = useState(defaultData.workInfo);
 
-  const [skillInfo, setSkillInfo] = useState({
-    skill1: 'JavaScript',
-    skill2: 'Python',
-    skill3: 'C++'
-  })
+  const [skillInfo, setSkillInfo] = useState(defaultData.skillInfo);
 
   return (
     <>
@@ -49,15 +34,10 @@ function App() {
           />
         <GenInfo           
           personalInfo={personalInfo} 
-          setPersonalInfo={setPersonalInfo} 
-          objective={objective} 
-          setObjective={setObjective}
+          objective={objective}
           educationInfo={educationInfo}
-          setEducationInfo={setEducationInfo}
           workInfo={workInfo}
-          setWorkInfo={setWorkInfo}
           skillInfo={skillInfo}
-          setSkillInfo={setSkillInfo} 
           />
       </div>
     </>
